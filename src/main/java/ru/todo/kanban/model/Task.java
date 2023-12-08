@@ -1,15 +1,19 @@
 package ru.todo.kanban.model;
 
+import lombok.AllArgsConstructor;
+import lombok.Builder;
 import lombok.Data;
 
-import java.time.LocalDateTime;
+import java.time.LocalDate;
 
 @Data
+@Builder
+@AllArgsConstructor
 public class Task {
-    protected Long id;
-    protected String title;
-    protected String description;
-    protected LocalDateTime startDate;
-    protected LocalDateTime dueDate;
-    protected boolean completed;
+    private Long id;
+    private String title;
+    private String description;
+    private LocalDate startDate;
+    private LocalDate dueDate;
+    private Boolean completed;
 }
