@@ -1,0 +1,6 @@
+2023-12-08 20:59:13.154326+03:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "CREATE TABLE IF NOT EXISTS PUBLIC.tasks ( id INTEGER, title VARCHAR(255) NOT NULL, description VARCHAR(255) NOT NULL, startDate DATE, dueDate DATE, completed BOOLEAN CONSTRAINT pk_tasks_id PRIMARY KEY [*](id) )"; expected "HASH, CONSTRAINT, COMMENT, UNIQUE, NOT NULL, CHECK, REFERENCES, ,, )"; SQL statement:
+CREATE TABLE IF NOT EXISTS PUBLIC.tasks ( id INTEGER, title VARCHAR(255) NOT NULL, description VARCHAR(255) NOT NULL, startDate DATE, dueDate DATE, completed BOOLEAN CONSTRAINT pk_tasks_id PRIMARY KEY (id) ) [42001-224]
+2023-12-08 21:00:28.651722+03:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "GENRE" not found; SQL statement:
+INSERT INTO genre(name) VALUES ('Комедия'), ('Драма'), ('Мультфильм'), ('Триллер'), ('Документальный'), ('Боевик') [42102-224]
